@@ -1,11 +1,18 @@
 import React from 'react';
 import Header from './components/Header';
+import { Row, Col } from "antd";
+import Table from './components/Table';
 
 function App() {
   return (
-    <div className='App'>
+    <>
       <Header />
-    </div>
+      <Row>
+        <Col xs={24} md={{span: 12, offset: 6}}>
+          <Table />
+        </Col>
+      </Row>
+    </>
   );
 }
 
